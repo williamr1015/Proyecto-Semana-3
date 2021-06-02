@@ -1,0 +1,11 @@
+.container-hero{
+   border: 2px solid gray;
+   align-items: center;
+   height: 300px;
+   justify-content: center;
+}
+.container-hero img {
+   justify-self: center;
+   align-items: center;
+   margin: 0 auto;
+}
