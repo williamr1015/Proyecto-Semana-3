@@ -1,8 +1,11 @@
+body {
+   min-width: 280px;
+}
 .container-hero{
    border: 2px solid gray;
    align-items: center;
    height: auto;
-   width: 100%;
+   min-width: 280px;
    justify-content: center;
 }
 .container-hero img {
@@ -11,8 +14,22 @@
    margin: 0 auto;
 }
 #catalogo-main{
-   width: 100%;
+   min-width: 280px;
    height: 70hv;
+   padding: 15 15 15 15 solid #5a3779;
+   margin-top: 50px;
+   border: 2px solid rgb(251, 136, 5);   
+}
+#columnas-catalogo {
+ padding: 15 15 15 15;
+}
+#filas-catalogo {
    padding: 15 15 15 15;
-   
+   padding-top: 20px;
+}
+.container-carrousel {
+   margin-top: 50px;
+}
+#parrafo-carrousel {
+   height: min-content;
 }
