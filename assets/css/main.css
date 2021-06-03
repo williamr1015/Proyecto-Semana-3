@@ -27,18 +27,12 @@ body {
    padding: 15 15 15 15;
    padding-top: 20px;
 }
-.container-carrousel {
-   margin-top: 50px;
-}
-#parrafo-carrousel {
-   height: min-content;
-}
-.header {
-   color:black;
-   font-size: 24px;
-   padding: 5px;
-   text-align: center;
-}
+   .text-center {
+      color:black;
+      font-size: 24px;
+      padding: 5px;
+      text-align: center;
+   }
 
 .bigicon {
    font-size: 30px;
@@ -57,7 +51,7 @@ body {
    font-family: sans-serif;
    grid-template-columns: 1fr 1fr 1fr;
    align-items: center;
-   font-size: 16px;
+   font-size: 1.6rem;
    list-style-type: none;
    
 
