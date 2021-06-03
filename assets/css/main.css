@@ -15,7 +15,7 @@ body {
 }
 #catalogo-main{
    min-width: 280px;
-   height: 70hv;
+   height: 70vh;
    padding: 15 15 15 15 solid #5a3779;
    margin-top: 50px;
    border: 2px solid rgb(251, 136, 5);   
@@ -29,7 +29,7 @@ body {
 }
    .text-center {
       color:black;
-      font-size: 24px;
+      font-size: 2.4rem;
       padding: 5px;
       text-align: center;
    }
