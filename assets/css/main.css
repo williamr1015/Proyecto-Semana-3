@@ -27,9 +27,34 @@ body {
    padding: 15 15 15 15;
    padding-top: 20px;
 }
-.container-carrousel {
-   margin-top: 50px;
+   .text-center {
+      color:black;
+      font-size: 24px;
+      padding: 5px;
+      text-align: center;
+   }
+
+.bigicon {
+   font-size: 30px;
+   color: #36A0FF;
+   margin: 1px;
+
 }
-#parrafo-carrousel {
-   height: min-content;
+.boton-enviar{
+   margin-top: 30px;
+   margin-bottom: 50px;
+
+}
+.lista-desarrolladores{
+   padding-top: 2px;
+   display: grid;
+   font-family: sans-serif;
+   grid-template-columns: 1fr 1fr 1fr;
+   align-items: center;
+   font-size: 1.6rem;
+   list-style-type: none;
+   
+
+
+
 }

@@ -4,46 +4,50 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <title>Proyecto semana 3</title>
+    <title>Bootstrap Semana 3</title>
 </head>
-<body>
+<body style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; font-size: 2rem;">
     <header>
       <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">          
-            <img src="./assets/icons/bootstrap-logo.svg" alt="" width="30" height="24" class="d-inline-block align-text-top">         
+        div class="container-fluid">
+          <a class="navbar-brand" href="#hero" style="font-size: 3rem;">          
+            <img src="./assets/icons/bootstrap-logo.svg" alt="Logo Bootstrap" width="110px" height="70px" class="d-inline-block align-text-top">         
             Bootstrap
           </a>          
         </div>        
       </nav>                  
     </header>
     <main>
-      <section>
+      <section style="font-size: 2rem;">
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <div class="container-fluid">
-            <a class="navbar-brand" href="#">Semana 3</a>
+            <a class="navbar-brand" href="#hero" style="font-size: 2rem;">Semana 3</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
               <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <div class="navbar-nav">
                 <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                <a class="nav-link active" href="#">Historia</a>
-                <a class="nav-link active" href="#">Bootstrap 5</a>
+                <a class="nav-link active" href="#historia">Historia Bootstrap</a>
+                <a class="nav-link active" href="#">Cursos</a>
                 <a class="nav-link active" href="#">Contactanos</a>
               </div>
             </div>
           </div>
         </nav>
-        <div  class="container-xxl  container-hero" style="background-color: rgb(251, 136, 5);">
+        <div id="hero" class="container-fluid  container-hero" style="background-color: rgb(251, 136, 5);">
           <img  src="./assets/img/Bootstrap logo 2.png" class="img-fluid" alt="logo Bootstrap" height="150px">          
           </div>      
       </section>
       <section>
-        <div class="container-xxl" id="catalogo-main">
+        <!-- */*/catalogo /*/* -->
+        
+      </section>
+      <section style="font-size: 1.5rem;">
+        <div class="container-fluid" id="catalogo-main">
           <div class="row" id="filas-catalogo">
             <div class="col" id= "columnas-catalogo">
              <img src="./assets/img/creadores Bootstrap.jpg" alt="Creadores Bootstrap" width="250px">
@@ -90,74 +94,128 @@
           </div>
         </div>
       </section>
-      <section class="container-carrousel">
+      <!-- carousel -->
+      <section id="historia" class="container-carrousel" style="font-size: 1.4rem;">
         <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-indicators">
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" class="active" aria-current="true" aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" class="active" aria-current="true" aria-label="Slide 7"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6" aria-label="Slide 7"></button>
             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="7" aria-label="Slide 8"></button>
           </div>
           <div class="carousel-inner">
-            <div class="carousel-item active">
-              <img src="./assets/img/creadores Bootstrap carrousel.jpg" class="d-block w-100" alt="Creadores de Bootstrap">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Inicios</h5>
-                <p id="parrafo-carrousel">Bootstrap, originalmente llamado Blueprint de Twitter, fue desarrollado por Mark Otto y Jacob Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia entre las herramientas internas. Antes de Bootstrap, se usaron varias bibliotecas para el desarrollo de interfaces de usuario, lo que generó inconsistencias y una gran carga de trabajo en su mantenimiento. Según el desarrollador de Twitter, Mark Otto, frente a esos desafíos:
-                "...un grupo súper pequeño de desarrolladores y yo nos reunimos para diseñar y construir una nueva herramienta interna y vimos la oportunidad de hacer algo más. A través de ese proceso, nos vimos construyendo algo mucho más sustancial que otra herramienta interna. Meses después terminamos con una primera versión de Bootstrap como una manera de documentar y compartir activos y patrones de diseño comunes dentro de la compañía." Mark Otto
+             <div class="carousel-item active">
+               <img src="./assets/img/creadores Bootstrap carrousel.jpg" class="d-block w-100" alt="Creadores de Bootstrap">
+               <div class="carousel-caption d-none d-md-block col-md-6 offset-md-3">
+                 <h2>Inicios</h2<>
+                 <p style="font-size: 1.4rem;" id="parrafo-carrousel">Bootstrap, originalmente llamado Blueprint de Twitter, fue desarrollado por Mark Otto y Jacob Thornton de Twitter, como un marco de trabajo (framework) para fomentar la consistencia entre las herramientas internas. Antes de Bootstrap, se usaron varias bibliotecas para el desarrollo de interfaces de usuario, lo que generó inconsistencias y una gran carga de trabajo en su mantenimiento. Según el desarrollador de Twitter, Mark Otto, frente a esos desafíos:
+
+                  "...un grupo súper pequeño de desarrolladores y yo nos reunimos para diseñar y construir una nueva herramienta interna y vimos la oportunidad de hacer algo más. A través de ese proceso, nos vimos construyendo algo mucho más sustancial que otra herramienta interna. Meses después terminamos con una primera versión de Bootstrap como una manera de documentar y compartir activos y patrones de diseño comunes dentro de la compañía." Mark Otto
                   El primer desarrollo en condiciones reales ocurrió durante la primera "Semana de Hackeo" (Hackweek) de Twitter." Mark Otto mostró a algunos colegas como acelerar el desarrollo de sus proyectos con la ayuda de la herramienta de trabajo. Como resultado, decenas de temas se han introducido en el marco de trabajo.
                    En agosto del 2011, Twitter liberó Bootstrap como código abierto. En febrero del 2012, se convirtió en el proyecto de desarrollo más popular de GitHub.</p>
+                </div>
               </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/Logo Carrousel.jpg" class="d-block w-100" alt="Bootstrap 1">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bootstrap 1</h5>
-                <p id="parrafo-carrousel">Después de unos meses de desarrollo por parte de un pequeño grupo, muchos desarrolladores de Twitter comenzaron a contribuir al proyecto como parte de Hack Week, una semana estilo hackathon para el equipo de desarrollo de Twitter. Se renombró de Twitter Blueprint a Bootstrap y se lanzó como proyecto de código abierto el 19 de agosto de 2011.9​ Mark Otto, Jacob Thornton y un pequeño grupo de desarrolladores principales, así como una gran comunidad de contribuyentes.</p>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
-              <div class="carousel-caption d-none d-md-block">
-                <h5>Bootstrap 2</h5>
-                <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+             <div class="carousel-item">
+               <img src="./assets/img/Logo Carrousel.jpg" class="d-block w-100" alt="Bootstrap 1">
+               <div class="carousel-caption d-none d-md-block col-md-6 offset-md-4">
+                 <h2>Bootstrap 1</h2>
+                 <p id="parrafo-carrousel">Después de unos meses de desarrollo por parte de un pequeño grupo, muchos desarrolladores de Twitter comenzaron a contribuir al proyecto como parte de Hack Week, una semana estilo hackathon para el equipo de desarrollo de Twitter. Se renombró de Twitter Blueprint a Bootstrap y se lanzó como proyecto de código abierto el 19 de agosto de 2011.9​ Mark Otto, Jacob Thornton y un pequeño grupo de desarrolladores principales, así como una gran comunidad de contribuyentes.</p>
+               </div>
+             </div>
+             <div class="carousel-item">
+               <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
+               <div class="carousel-caption d-none d-md-block col-md-6 offset-md-4">
+                 <h2>Bootstrap 2</h2>
+                 <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+               </div>
               </div>
               <div class="carousel-item">
                 <img src="./assets/img/Bootstrap 3 carrousel.jpg" class="d-block w-100" alt="Bootstrap 3">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5>Bootstrap 3</h5>
+                <div class="carousel-caption d-none d-md-block col-md-6 offset-md-4">
+                  <h2>Bootstrap 3</h2>
                   <p id="parrafo-carrousel">A finales de agosto del 2013 se publicó la nueva versión de Bootstrap 3, uno de los frameworks front-end más populares.
                     El cambio más significativo lo encontrabamos en el sistema de grids, que estába enfocado al "mobile first", una de las prácticas de diseño web más de moda. Esto le da la vuelta a la tortilla: si bien antes se realizaba un diseño para Desktop, que se adaptaba a dispositivos móviles de forma automática, lo que se buscaba es un buen diseño para dispositivos móviles que se adapte a las pantallas más grandes (si se ve bien en una pantalla pequeña, mucho mejor en una grande), algo que se puso también en práctica en el diseño de Windows 8.</p>
                 </div>
+              </div>  
                 <div class="carousel-item">
-                  <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
-                  <div class="carousel-caption d-none d-md-block">
-                    <h5>Bootstrap 2</h5>
-                    <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+                  <img src="./assets/img/Bootstrap 4 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
+                  <div class="carousel-caption d-none d-md-block col-md-6 offset-md-3">
+                    <h2>Bootstrap 4</h2>
+                    <p id="parrafo-carrousel">Mark Otto anunció Bootstrap 4 el 29 de octubre de 2014. La primera versión alfa de Bootstrap 4 se lanzó el 19 de agosto de 2015​. La primera versión beta se lanzó el 10 de agosto de 2017. Mark suspendió el trabajo en Bootstrap 3 el 6 de septiembre de 2016 para liberar tiempo para trabajar en Bootstrap 4. Bootstrap 4 se finalizó el 18 de enero de 2018​.
+
+                      Los cambios importantes incluyen:
+                      
+                      Reescritura importante del código
+                      Reemplazo de Less con Sass
+                      Adición de Reboot, una colección de cambios CSS específicos del elemento en un solo archivo, basado en Normalize
+                      Dejar de admitir IE8, IE9 e iOS 6
+                      Compatibilidad con CSS Flexible Box
+                      Agregar opciones de personalización de navegación
+                      Adición de utilidades de tamaño y espaciado sensibles
+                      Cambiar de la unidad de píxeles en CSS a root ems
+                      Aumento del tamaño de fuente global de 14px a 16px para mejorar la legibilidad
+                      Soltar los componentes del panel, la miniatura, el localizador y el pozo
+                      Soltar la fuente del icono Glyphicons
+                      Gran número [cuantificar] de clases de servicios públicos
+                      Estilo de formulario, botones, menús desplegables, objetos multimedia y clases de imágenes mejorados
+                      Bootstrap 4 es compatible con las últimas versiones de Google Chrome, Firefox, Internet Explorer, Opera, y Safari (excepto en Windows). Además, es compatible con IE10 y la última versión de soporte extendido (ESR) de Firefox.</p>
                   </div>
+                </div>  
                   <div class="carousel-item">
-                    <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
-                    <div class="carousel-caption d-none d-md-block">
-                      <h5>Bootstrap 2</h5>
-                      <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+                    <img src="./assets/img/Bootstrap 5 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
+                    <div class="carousel-caption d-none d-md-block col-md-6 offset-md-3">
+                      <h2>Bootstrap 5</h2>
+                      <p id="parrafo-carrousel">La versión 5 de Bootstrap fue anunciada por Mark Otto el 21 de diciembre de 2018 ​ y luego de 3 versiones alfas y 3 betas, fue lanzada oficialmente el 5 de mayo de 2021. Días después, el 13 de mayo, se lanzó el primer parche, la v5.0.1​, la cual conformaría la última versión estable.
+
+                        Los nuevos cambios y agregados fueron los siguientes:
+                        
+                        Nuevo menú de componentes "offcanvas".
+                        Se pasa de jQuery a Vanilla JavaScript.
+                        Migración de la documentación de Jekyll a Hugo.
+                        Se retira el soporte para Internet Explorer 10 y 11, Microsoft Edge Legacy, y versiones inferiores a: Firefox 60, Safari 10 y Chrome 60.
+                        El testing de infraestructura pasa de QUnit a Jasmine.
+                        Inclusión de un nuevo set de íconos SVG y nuevas propiedades de CSS.
+                        API mejorada.
+                        Mejora del sistema de grid.
+                        Creación de la sección de formularios, con nuevos formularios incluidos.
+                        Soporte RTL (right-to-left) para sistemas de escritura de derecha a izquierda.
+                        Implementación de Dart Sass.</p>
                     </div>
+                  </div>  
                     <div class="carousel-item">
-                      <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
-                      <div class="carousel-caption d-none d-md-block">
-                        <h5>Bootstrap 2</h5>
-                        <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+                      <img src="./assets/img/Actualidad Bootstrap  carrousel.jpg" class="d-block w-100" alt="Actualidad de Bootstrap">
+                      <div class="carousel-caption d-none d-md-block col-md-6 offset-md-3">
+                        <h2>Actualidad de Bootstrap</h2>
+                        <p id="parrafo-carrousel">Bootstrap 5 no ha reinventado toda su estructura. Esto concuerda con la intención de sus desarrolladores, que pretendían hacer una transición fácil de la versión 4 a la 5. Lo que quizá más costará al principio a los usuarios de Bootstrap será la omisión de jQuery. Sin embargo, después de un período de familiarización, la herramienta presentará más ventajas que inconvenientes. Los cambios prometen unos procesos de trabajo más simples y un código más ligero y rápido.</p>
                       </div>
+                    </div>  
                       <div class="carousel-item">
-                        <img src="./assets/img/Bootstrap 2 carrousel.jpg" class="d-block w-100" alt="Bootstrap 2">
-                        <div class="carousel-caption d-none d-md-block">
-                          <h5>Bootstrap 2</h5>
-                          <p id="parrafo-carrousel">El 31 de enero de 2012, se lanzó Bootstrap 2, que agregó soporte integrado para Glyphicons, varios componentes nuevos, así como cambios en muchos de los componentes existentes. Esta versión admite el diseño web receptivo, lo que significa que el diseño de las páginas web se ajusta dinámicamente, teniendo en cuenta las características del dispositivo utilizado (ya sea de escritorio, tableta o teléfono móvil).</p>
+                        <img src="./assets/img/Usos Bootstrap  carrousel.jpg" class="d-block w-100" alt="Usos de Bootstrap">
+                        <div class="carousel-caption d-none d-md-block col-md-6 offset-md-4">
+                          <h2>Usos de Bootstrap</h2>
+                          <p id="parrafo-carrousel">Con este Framework podemos crear sitios Webs profesionales que pueden contener muchos componentes y elementos que nos brinda consigo Bootstrap, entre los elementos que nos brinda son:
+
+
+ 
+                            Alertas
+                            Breadcrumbs
+                            Botones
+                            Tarjetas
+                            Carrusel
+                            Listas Ordenandas
+                            Formularios
+                            Ventanas Modales
+                            Menu de Navegación
+                            Paginación
+                            Barras de Progreso
+                            Entre otros
+                            Una página web necesita de estos elementos y Bootstrap te los brinda listos para que lo uses en tu proyecto.</p>
                         </div>
-            </div>
+                      </div>  
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
             <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -169,11 +227,9 @@
           </button>
         </div>
       </section>
+<!-- >>>>>>> test -->
     </main>
-    
-
-
-
+   
 <footer class="bg-light text-center text-black">
 
   <div class="container">
@@ -182,7 +238,7 @@
             <div class="well well-sm">
                 <form class="form-horizontal" method="post">
                     <fieldset>
-                        <legend class="text-center header">Contactenos</legend>
+                        <legend class="text-center">Contactenos</legend>
                         <div class="form-group">
                             <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
                             <div class="col-md-8">
