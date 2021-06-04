@@ -1,6 +1,17 @@
 body {
    min-width: 280px;
 }
+header {
+   position: fixed;
+   left: 0;
+   top: o;
+   width: 100%;
+   background-color: rgba(0, 0, 0, 0.5)
+   
+}
+main{
+   padding-top: 15rem;
+}
 .container-hero{
    border: 2px solid gray;
    align-items: center;
