@@ -13,6 +13,14 @@ body {
    align-items: center;
    margin: 0 auto;
 }
+.container-carrousel{
+   height: auto;
+}
+
+.container-carrousel p {
+   height: fit-content;
+
+}
 #catalogo-main{
    min-width: 280px;
    height: 70hv;
